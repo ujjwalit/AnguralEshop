@@ -16,5 +16,6 @@ export class AdminAuthGuard implements CanActivate {
     return this.auth.appUser$
     .pipe(map(appUser => appUser.isAdmin));
     
+    
   }
 }
