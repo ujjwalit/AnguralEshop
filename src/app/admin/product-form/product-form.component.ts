@@ -4,7 +4,7 @@ import { CategoryService } from './../../category.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { map } from 'rxjs/operators';
-import { take } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-product-form',

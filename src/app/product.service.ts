@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ProductService {
-
+  //data:any;
   constructor(private db: AngularFireDatabase) { }
 
   create(product) {
