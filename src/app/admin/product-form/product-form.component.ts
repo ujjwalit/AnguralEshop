@@ -24,7 +24,7 @@ export class ProductFormComponent implements OnInit {
     private productService: ProductService) { 
 
     //this.categories$ = categoryService.getCategories().valueChanges();
-    this.categories$ = categoryService.getCategories().snapshotChanges()
+    this.categories$ = categoryService.getAll().snapshotChanges()
     .pipe(map(items => {             // <== new way of chaining
       return items.map(a => {
         const data = a.payload.val();
