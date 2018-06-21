@@ -12,6 +12,9 @@
             <li class="nav-item">
                 <a class="nav-link" routerLink="/shopping-cart">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="badge badge-warning badge-pill">
+                        {{shoppingCartItemCount}}
+                    </span>
                 </a>
             </li>
             <ng-template #anonymousUser>
